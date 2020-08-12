@@ -1,0 +1,52 @@
+.results {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow-x: hidden;
+  transition-timing-function: ease-out;
+  transition-duration: 1s;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.show {
+  background-color: lavender;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.show h1,
+img,
+h2,
+h3 {
+  padding: 15px;
+}
+
+.search-box {
+  outline: none;
+  border: 2px solid darkgrey;
+  border-radius: 25px;
+
+  border-color: darkgrey;
+  text-align: center;
+  text-shadow: 1px 1px lightsalmon;
+  font-size: 20px;
+  font-family: serif;
+  height: 45px;
+  width: 200px;
+}
+
+.resulty {
+  transition: background-color 0.5s;
+  opacity: 0.5;
+}
+
+.resulty:hover {
+  background-color: gold;
+  opacity: 1;
+}
